@@ -224,6 +224,7 @@ html, body{
 
 	#name {
     	padding-top: 0px;
+    	font-size: 40px;
     }
 
     .icon-nav {
@@ -267,6 +268,9 @@ html, body{
 	.ots {
     	padding-top: 10px;
 	}
+	.menu a {
+    	font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -280,11 +284,11 @@ html, body{
 
 @media screen and (max-height: 330px) and (max-width: 570px) and (orientation: landscape){
 	.site-img, .align-g {
-    	width: 150px;
+    	width: 130px;
 	}
 
 	.site-img.wdth {
-    	width: 150px;
+    	width: 130px;
 	}
 
 	.description {
