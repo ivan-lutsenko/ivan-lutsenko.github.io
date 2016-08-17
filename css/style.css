@@ -284,11 +284,11 @@ html, body{
 
 @media screen and (max-height: 330px) and (max-width: 570px) and (orientation: landscape){
 	.site-img, .align-g {
-    	width: 130px;
+    	width: 110px;
 	}
 
 	.site-img.wdth {
-    	width: 130px;
+    	width: 110px;
 	}
 
 	.description {
