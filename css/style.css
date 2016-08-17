@@ -246,6 +246,7 @@ html, body{
 	}
 
 	.description {
+		display: none;
     	padding: 2px;
 	}
 
@@ -258,6 +259,7 @@ html, body{
 	}
 
 	#date {
+		display: none;
     	padding: 3px;
 	}
 
@@ -289,14 +291,6 @@ html, body{
 
 	.site-img.wdth {
     	width: 150px;
-	}
-
-	#date {
-		display: none;
-    }
-
-	.description {
-    	display: none;
 	}
 }
 
