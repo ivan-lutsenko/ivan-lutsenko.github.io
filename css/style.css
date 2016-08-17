@@ -1,0 +1,309 @@
+html, body{
+    height: 100%;
+}
+
+@font-face {
+    font-family: Adine Kirnberg;
+    src: url(../fonts/text/adine_kirnberg.ttf);
+}
+
+@font-face{
+	font-family: Olietta_script_Lyrica;
+    src: url(../fonts/text/olietta_script_lyrica.ttf);
+}
+
+@font-face{
+	font-family: Cony Regular;
+    src: url(../fonts/text/cony/ConyRegular.otf);
+}
+
+#hght{
+	height: 100%;
+}
+
+#hght-1{
+	height: 50%;
+}
+
+.hght-1{
+	height: 100%;
+	background: #636571;
+	padding: 0px;
+	overflow: hidden;
+}
+
+.hght-2{
+	height: 100%;
+	background: #a9cff1; 
+	padding-top: 15px;
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+
+.ots{
+	padding-top: 50px;
+	padding-left: 60px;
+}
+
+.align{
+	width: 240px;
+    margin: auto;
+}
+
+.avatar{
+	width: 180px;
+	height: auto;
+	border-radius: 50%;
+	border: 3px solid #e56f7f; 
+}
+
+#name{
+	padding-top: 20px;
+	text-align: center;
+	font-family: Adine Kirnberg;
+	font-size: 50px;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+
+#adress{
+	text-align: center;
+	font-family: Olietta_script_Lyrica;
+	font-size: 20px;
+	color: #f1f1f1;
+}
+
+.adr-l, #gl-menu{
+	padding-left: 0.5em;
+}
+
+.menu{
+	padding-top: 5px; 
+    display: table;
+    width: 100%;
+}
+
+.menu ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+.menu li{
+	list-style-type: none;
+}
+
+.menu a{
+	text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    /*margin: 0 5px;*/
+    padding: 13px;
+    background: #636571;
+    color: #f1f1f1;
+    font-family: Florence, cursive;
+    font-size: 16px;
+    -moz-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+	-o-transition: all 0.7s;
+	transition: all 0.7s;
+}
+
+.menu a:hover{
+	background: #e56f7f;
+	color: #1728ab;
+}
+
+.icon-nav{
+	padding-top: 20px;
+	width: 185px;
+	margin: auto;
+}
+
+.icon{
+	width: 40px;
+	margin-left: 3px;
+	display: inline-block;
+	cursor: pointer;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.icon:hover{
+	-moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.site-1{
+	height: 100%;
+	overflow: hidden;
+}
+
+.site-img, .align-g{
+	width: 280px;
+}
+
+.site-img{
+	border-radius: 5px;
+    border: 2px solid #fffcfc;
+	height: auto;
+}
+
+.site-img.wdth{
+	width: 265px;
+}
+
+.align-g{
+	margin: auto;
+}
+
+.align-v, .align-v-l{
+	position: absolute;
+	top: 5%;
+}
+
+.align-v-l{
+	left: 4em;
+}
+
+#date{
+	background: #4a5d6d;
+	padding: 5px; 
+	overflow: hidden;
+	font-size: 10px;
+	font-family: Zapf Chancery, cursive;
+	text-align: center;
+	color: white;
+}
+
+.icon-font{
+	display: inline-block;
+	font-size: 15px;
+}
+
+.date{
+	position: relative;
+    top: -2px;
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.description{
+	background: #fff8f9;
+	padding: 7px;
+	overflow: hidden;
+	font-family: Cony Regular;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 992px){
+	.align-v-l {
+    	left: initial;
+	}
+
+	.ots {
+    	padding-top: 25px;
+	}
+
+	.avatar{
+		width: 120px;
+	}
+
+	.align{
+		width: 180px;
+	}
+
+	#name {
+    	padding-top: 0px;
+    }
+
+    .icon-nav {
+    	padding-top: 10px;
+	}
+
+	.site-img, .align-g {
+    	width: 260px;
+	}
+
+	.site-img.wdth {
+    	width: 260px;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: 992px){
+	.avatar{
+		display: none;
+	}
+
+	.description {
+    	padding: 2px;
+	}
+
+	.site-img, .align-g {
+    	width: 180px;
+	}
+
+	.site-img.wdth {
+    	width: 180px;
+	}
+
+	#date {
+    	padding: 3px;
+	}
+
+	.icon-nav {
+    	padding-top: 5px;
+	}
+
+	.ots {
+    	padding-top: 10px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.hght-2{
+		height: 200%;
+	}
+	#hght-1{
+		height: 25%;
+	}
+}
+
+@media screen and (max-height: 330px) and (max-width: 570px) and (orientation: landscape){
+	.site-img, .align-g {
+    	width: 150px;
+	}
+
+	.site-img.wdth {
+    	width: 150px;
+	}
+
+	.description {
+    	font-size: 15px;
+	}
+}
+
+/*.x{
+	background: #f3d8c1;
+}
+
+.y{
+	background: #d2c2d3;
+}
+
+.x1{
+	background: #9a599e;
+}
+
+.y1{
+	background: #ffca9d;	
+}*/
