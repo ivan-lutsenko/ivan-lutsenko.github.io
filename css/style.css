@@ -260,6 +260,7 @@ html, body{
 	.site-1 {
     	width: 50%;
     	margin-top: 30px;
+    	height: 120%;
     }
 
 	#date {
