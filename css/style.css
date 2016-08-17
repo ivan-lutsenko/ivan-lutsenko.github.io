@@ -284,15 +284,19 @@ html, body{
 
 @media screen and (max-height: 330px) and (max-width: 570px) and (orientation: landscape){
 	.site-img, .align-g {
-    	width: 110px;
+    	width: 150px;
 	}
 
 	.site-img.wdth {
-    	width: 110px;
+    	width: 150px;
 	}
 
+	#date {
+		display: none;
+    }
+
 	.description {
-    	font-size: 15px;
+    	display: none;
 	}
 }
 
