@@ -240,26 +240,29 @@ html, body{
 	}
 }
 
-@media screen and (orientation: landscape) and (max-width: 992px){
+@media screen and (orientation: landscape) and (max-width: 768px){
 	.avatar{
 		display: none;
 	}
 
 	.description {
-		display: none;
     	padding: 2px;
 	}
 
 	.site-img, .align-g {
-    	width: 180px;
+    	width: 200px;
 	}
 
 	.site-img.wdth {
-    	width: 180px;
+    	width: 200px;
 	}
 
+	.site-1 {
+    	width: 50%;
+    	margin-top: 30px;
+    }
+
 	#date {
-		display: none;
     	padding: 3px;
 	}
 
