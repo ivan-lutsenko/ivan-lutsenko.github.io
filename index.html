@@ -10,9 +10,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,33 +19,36 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body ng-app="myApp" ng-controller="myCtrl">
 	<div class="container-fluid" id="hght">
 		<div class="row" id="hght"> 
 	  		<div class="col-md-3 hght-1">
+	  			<div class="language">
+	  				<div class="inl">
+	  					<img ng-click="language('rus')" class="rus" src="img/language/russian.png" alt="Russian" data-toggle="tooltip" data-placement="left" title="Russian">
+	  				</div>
+	  				<div class="inl">
+	  					<img ng-click="language('engl')" class="engl" src="img/language/engl.png" alt="USA" data-toggle="tooltip" data-placement="bottom" title="English">
+	  				</div>
+	  			</div>
 	  			<div class="ots">
-	  				<div class="align"">
+	  				<div class="align">
 	  					<img class="avatar" src="img/avatar.jpg" alt="ivan lutsenko">
 	  				</div>
 	  			</div>
-	  			<div id="name">Ivan Lutsenko</div>
-	  			<div id="adress"><i class="fa fa-map-marker fa-pulse fa-spin fa-fw" aria-hidden="true"></i><span class="adr-l">Belarus, Minsk</span></div>
+	  			<div class="name"><h1 ng-bind-html="name">Ivan Lutsenko</h1></div>
+	  			<div id="adress"><i class="fa fa-map-marker fa-pulse fa-spin fa-fw" aria-hidden="true"></i><span ng-bind-html="adress" class="adr-l">Belarus, Minsk</span></div>
 	  			<div class="menu">
 	  				<ul>
-	  					<li><a href="#"><span class="glyphicon glyphicon-user"></span><span id="gl-menu">Profile</span></a></li>
-	  					<li><a href="#"><span class="glyphicon glyphicon-fire"></span><span id="gl-menu">Skills</a></span></li>
-	  					<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span><span id="gl-menu">Work</a></span></li>
+	  					<li ng-click="text(1)"><a href="#"><span class="glyphicon glyphicon-user"></span><span ng-bind-html="profile" id="gl-menu">Profile</span></a></li>
+	  					<li ng-click="text(2)"><a href="#"><span class="glyphicon glyphicon-fire"></span><span ng-bind-html="skills" id="gl-menu">Skills</a></span></li>
+	  					<li ng-click="text(3)"><a href="#"><span class="glyphicon glyphicon-briefcase"></span><span ng-bind-html="work" id="gl-menu">Work</a></span></li>
 	  				</ul>
 	  			</div>
 	  			<div class="icon-nav">
-	  				<!-- <img class="icon" src="img/instagram.png" alt="instagram"> -->
-	  				<object data="img/svg/instagram.svg" type="image/svg+xml" class="icon"></object>
-	  				<!-- <img class="icon" src="img/vk.png" alt="vk"> -->
-	  				<object data="img/svg/vk.svg" type="image/svg+xml" class="icon"></object>
-	  				<!-- <img class="icon" src="img/git.png" alt="git"> -->
-	  				<object data="img/svg/git.svg" type="image/svg+xml" class="icon"></object>
-	  				<!-- <img class="icon" src="img/skype.png" alt="skype"> -->
-	  				<object data="img/svg/skype.svg" type="image/svg+xml" class="icon"></object>
+	  				<a href="https://www.instagram.com/lutsenkoivan/" target="_blank"><img class="icon" src="img/instagram.png" alt="instagram"></a>
+	  				<a href="https://vk.com/boss.ivan55" target="_blank"><img class="icon" src="img/vk.png" alt="vk"></a>
+	  				<a href="https://github.com/ivan-lutsenko" target="_blank"><img class="icon" src="img/git.png" alt="git"></a>
 	  			</div>
 	  		</div> 
 	  		<div class="col-md-9 hght-2">
@@ -55,7 +57,13 @@
 						<div class="col-md-6 col-sm-6 col-xs-12 site-1">
 							<div class="align-g">
 								<div class="align-v">
+									<div class="effect eff-1-1">
 									<img class="site-img" src="img/mercedes.jpg" alt="mercedes">
+										<div class="caption">
+											<div class="opis">site is dedicated to cars</div>
+											<a class="btn" href="#">View More</a>
+										</div>
+									</div>
 									<div id="date"><span class="glyphicon glyphicon-calendar icon-font"></span><div class="date">11.02.1997</div></div>
 									<div class="description">Mercedes</div>
 								</div>
@@ -64,7 +72,13 @@
 						<div class="col-md-6 col-sm-6 col-xs-12 site-1">
 							<div class="align-g">
 								<div class="align-v-l">
+									<div class="effect eff-1-1">
 									<img class="site-img wdth" src="img/audi.jpg" alt="audi">
+										<div class="caption">
+											<div class="opis">site is dedicated to cars</div>
+											<a class="btn" href="#">View More</a>
+										</div>
+									</div>
 									<div id="date"><span class="glyphicon glyphicon-calendar icon-font"></span><div class="date">11.02.1997</div></div>
 									<div class="description">Audi</div>
 								</div>
@@ -77,7 +91,13 @@
 						<div class="col-md-6 col-sm-6 col-xs-12 site-1">
 							<div class="align-g">
 								<div class="align-v">
+									<div class="effect eff-1-1">
 									<img class="site-img wdth" src="img/honda.jpg" alt="honda">
+										<div class="caption">
+											<div class="opis">site is dedicated to cars</div>
+											<a class="btn" href="#">View More</a>
+										</div>
+									</div>
 									<div id="date"><span class="glyphicon glyphicon-calendar icon-font"></span><div class="date">11.02.1997</div></div>
 									<div class="description">Honda</div>
 								</div>
@@ -86,7 +106,13 @@
 						<div class="col-md-6 col-sm-6 col-xs-12 site-1">
 							<div class="align-g">
 								<div class="align-v-l">
+									<div class="effect eff-1-1">
 									<img class="site-img" src="img/bmw.jpg" alt="bmw">
+										<div class="caption">
+											<div class="opis">site is dedicated to cars</div>
+											<a class="btn" href="#">View More</a>
+										</div>
+									</div>
 									<div id="date"><span class="glyphicon glyphicon-calendar icon-font"></span><div class="date">11.02.1997</div></div>
 									<div class="description">BMW</div>
 								</div>
@@ -101,5 +127,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Angularjs -->
+    <script src="js/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script> 
+  	<script type="text/javascript"> 
+	    $(document).ready(function() { 
+	      $("a.fancyimage").fancybox(); 
+	    });
+  	</script> 
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>
