@@ -392,9 +392,8 @@ html, body{
 .obert{
 	background: #6F92C2;
 	padding: 15px;
+	font-size: 20px;
 	border-radius: 10px;
-	font-size: 18px;
-	font-family: Zapf Chancery, cursive;
 	margin-bottom: 15px;
 	box-shadow: 0 0 10px #262424;
 }
@@ -408,12 +407,4 @@ html, body{
 
 .thumb{ 
 	padding:5px; 
-}
-
-.butt{
-	font-size: 18px;
-	font-family: Zapf Chancery, cursive;
-	margin-bottom: 15px;
-	box-shadow: 0 0 10px #262424;
-	color: #1F1D1D;
 }
